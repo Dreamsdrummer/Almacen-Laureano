@@ -1,0 +1,782 @@
+body { 
+    background-image: url(https://images.pexels.com/photos/264547/pexels-photo-264547.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+/* Nav (AL+almacen Laureamo) */
+
+.logo__h1{
+    display: inline-block;
+    background-color: #012f;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 45px;
+}
+.logo__h2{
+    color: #fff;
+    display: inline-block;
+    background-color:#012f ;
+    position: relative;
+    border: 1px solid #000;
+    padding: 5px;
+    top:0;
+}
+/* Sub nav (Inicio + Ofertas) */
+.ul1{
+    display: none;
+}
+.sub{
+    display:block;
+    background-color: #fff;
+    opacity: 0.8;
+    outline: 1px solid #000;
+    max-width: 100%;
+}
+.sub__ini{
+    display:block;
+    outline: 1px solid #000;
+
+}
+.sub__ini a{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+.sub__ini a:hover{
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+    text-decoration: none;
+}   
+.sub__ofertas a{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+.sub__ofertas a:hover{
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+    text-decoration: none;
+}  
+/* Cartel (Bienvenidos a nuestra web, posicion) */
+.cartel{
+    display:inline-flex;
+    position: relative;
+    background-color: #000;
+    opacity: .7;
+    height: 50%;
+    width: 50%;
+    top: 50px;
+    left: 90px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    }
+    
+/* Separacion de letras */
+.cartel__a{
+    position: relative;
+    left: -80px;
+    top: 35px;
+}
+.cartel__n--1{
+    position: relative;
+    right: -1px;
+}
+.cartel__w{
+    position: relative;
+    left: 5px;
+}
+.cartel__u{
+    position: relative;
+    left: 2px;
+}
+.cartel__n--2{
+    position: relative;
+    left: -150px;
+    top: 65px;
+}
+.cartel__u{
+    position: relative;
+    left: -150px;
+    top: 65px;  
+}
+.cartel__e--2{
+    position: relative;
+    left: -150px;
+    top: 65px; 
+
+}
+.cartel__s--1{
+    position: relative;
+    left: -150px;
+    top: 65px; 
+}
+.cartel__t{
+    position: relative;
+    left: -150px;
+    top: 65px; 
+}
+.cartel__r{
+    position: relative;
+    left: -150px;
+    top: 65px;
+}
+.cartel__a--1{
+    position: relative;
+    left: -150px;
+    top: 65px;
+}
+.cartel__w{
+    position: relative;
+    left: -240px;
+    top: 105px;
+}
+.cartel__e--3{
+    position: relative;
+    left: -240px;
+    top: 105px;
+}
+.cartel__b--2{
+    position: relative;
+    left: -240px;
+    top: 105px;
+}
+/* Referencia para animacion */
+.logo{
+    animation: i alternate;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+
+}
+.cartel__b{
+    animation: b infinite alternate-reverse;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.cartel__e, .cartel__n--1, .cartel__s, .cartel__e--2, .cartel__a--1{
+    display: block;
+    margin: 0;
+    animation: i infinite alternate;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-delay: 10s;
+}
+.cartel__v, .cartel__d, .cartel__n--2,.cartel__t, .cartel__e--3{
+    display: block;
+    margin: 0;
+    animation: b infinite alternate;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-delay: 10s;
+}
+
+/* Animaciones */
+@keyframes b{
+    25%{
+        opacity: 0;
+    }
+    40%{
+        transform: rotateX(90deg);
+    }
+    70%{
+        transform: rotateY(90deg);
+    }
+    100%{
+        transform-origin: right;
+    }
+}
+@keyframes i{
+    25%{
+    opacity: 0;
+}
+    40%{
+    transform: rotatey(90deg);
+    background-image: url();
+}
+    70%{
+    transform: rotatex(90deg);
+}
+    100%{
+    transform-origin: left;
+}
+    }
+
+@keyframes ofertas {
+    25%{
+        opacity: 0;
+    }
+    50%{
+        color: #f12f;
+    }
+
+}
+@keyframes what{
+    25%{
+        font-size: 25px;
+        color:rgb(0, 255, 55);
+        
+    }
+}
+/* Animaciones Mobile First */
+@keyframes despl {
+    0%{
+        position: relative;
+        left: -520px;
+        top: 10px;
+        
+    }
+}
+@keyframes despl2 {
+    0%{
+        position: relative;
+        left: 220px;
+        top: 100px;
+        
+    }
+}
+@keyframes despl3 {
+    0%{
+        position: relative;
+        left: 420px;
+        top: 40px;
+        
+    }
+ }
+/* Cartel de ofertas+Whatsapp */
+.ofertas{
+    display:inline;
+    max-width: 50px;
+    
+}
+.ofertas__h3{
+    margin-top: 200px;
+    color: #fff;
+    text-align: center;
+    animation: ofertas infinite alternate-reverse;
+    animation-duration: 1s;
+}
+.ofertas__click{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    right: -120px;
+}
+.ofertas__logo{
+    position: relative;
+    left: 120px;
+    color: #fff;
+    animation: what infinite alternate;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-delay: 1s;
+}
+.ofertas__logo :hover{
+    color: rgb(0, 255, 55);
+}
+/* Fotos /Galeria */
+.contenedor-fotos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -200px;
+}
+/* Imagen 1 */
+.img1{
+    text-align: center;
+    background-color: #fff;
+    opacity: 0.9;
+    margin-top:260px ;
+    
+}
+.img1__h3{
+    display: inline-block;
+    color: rgb(93, 93, 93);
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.img1__h3:hover{
+    color: rgb(255, 0, 0);
+    letter-spacing: .5px;
+    transition: 1s;
+}
+.img1__p{
+    color: rgb(93, 93, 93);
+    font-size: 20px;
+    font-family: 'Roboto Serif', sans-serif;
+}
+/* Imagen 2 */
+.img2{
+    text-align: center;
+    background-color: #fff;
+    opacity: 0.9;
+    
+}
+.img2__h3{
+    display: inline-block;
+    color: rgb(93, 93, 93);
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.img2__h3:hover{
+    color: rgb(255, 0, 0);
+    letter-spacing: .5px;
+    transition: 1s;
+}
+.img2__p{
+    color: rgb(93, 93, 93);
+    font-size: 20px;
+    font-family: 'Roboto Serif', sans-serif;
+}
+/* Imagen 3 */
+.img3{
+    text-align: center;
+    background-color: #fff;
+    opacity: 0.9;
+    
+}
+.img3__h3{
+    display: inline-block;
+    color: rgb(93, 93, 93);
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.img3__h3:hover{
+    color: rgb(255, 0, 0);
+    letter-spacing: .5px;
+    transition: 1s;
+}
+.img3__p{
+    color: rgb(93, 93, 93);
+    font-size: 20px;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+/* Imagen 4 */
+
+.img4{
+    text-align: center;
+    background-color:#fff;
+    opacity:0.9;
+    
+}
+.img4__h3{
+    display: inline-block;
+    color: rgb(93, 93, 93);
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.img4__h3:hover{
+    color: rgb(255, 0, 0);
+    letter-spacing: .5px;
+    transition: 1s;
+}
+.img4__p{
+    color: rgb(93, 93, 93);
+    font-size: 20px;
+    font-family: 'Roboto Serif', sans-serif;
+    }
+/* Footer (redes) */
+footer{
+    background-color: #000;
+}
+.redes{
+    font-size: 30px;
+    display: block;
+    background-color: #fff;
+}
+.redes__twitter, .redes__instagram, .redes__youtube{
+    color: rgb(255, 0, 0);
+}
+.redes__youtube :hover{
+    color: rgb(102, 20, 20);
+}
+.redes__instagram :hover{
+    color: rgb(102, 20, 20);
+}
+.redes__twitter :hover{
+    color: rgb(102, 20, 20);
+}
+.redes__twitter{
+    margin-left: 35%;
+}
+/* Footer (terminos) */
+.terminos{
+    color: #fff;
+}
+.terminos__p, .terminos__p--1{
+    text-align: center;
+}
+/* Mobile first */
+@media (min-width: 470px) {
+   
+    /* Logo y Nav */
+    .logo{
+        animation: b alternate;
+        animation-duration: 10s;
+        animation-iteration-count: 1;
+        animation-delay: 4s;
+    }
+    .ul1{
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        opacity: 0.2;
+    }
+    .ul1__ini, .ul1__ofertas{
+        list-style: none;
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+    }
+    .ul1__ini a{
+        color: rgb(255, 0, 0);
+        margin-right: 10px;
+        text-decoration: none;
+    }
+    .ul1__ofertas a{
+        color: rgb(255, 0, 0);
+        margin-left: 10px;
+        text-decoration: none;
+    }
+    .ul1__ini :hover{
+        letter-spacing: 1.5px;
+        color: rgb(77, 0, 0);
+        transition: 1.5s;
+    }
+    .ul1__ofertas :hover{
+        letter-spacing: 1.5px;
+        color: rgb(77, 0, 0);
+        transition: 1.5s;
+    }
+    .sub{
+        display: none;
+    }
+    /* Cartel bienvenida */
+    .cartel{
+        font-family: 'Libre Baskerville', serif;
+        font-size: 50px;
+        
+        
+    }
+    .cartel__o, .cartel__s{
+        background-color: #000;
+    }
+    
+    .cartel__n--2, .cartel__u, .cartel__e--2, .cartel__s--1, .cartel__t, .cartel__r, .cartel__a--1{
+        position: relative;
+        left:-300px;
+        top: 90px;
+        background-color: #000;
+    }
+    .cartel__w, .cartel__e--3, .cartel__b--2{
+        position: relative;
+        top: 160px;
+        left: -480px;
+        background-color: #000;
+    }     
+
+    /* Animaciones */
+
+    .cartel__a{
+        position: relative;
+        left: -150px;
+        top: 44px;
+        animation: despl infinite alternate;
+        animation-duration: 1s;
+        opacity: .8;
+        animation-delay: 20s;
+        animation-iteration-count: 3;
+    }
+    .cartel__a--1{
+        animation: despl infinite alternate;
+        animation-duration: 2s;
+        animation-delay: 20s;
+        animation-iteration-count: 3;
+    }
+    .cartel__n--2{
+        animation: despl2 infinite alternate;
+        animation-duration: 3s;
+        animation-delay: 20s;
+        animation-iteration-count: 3;
+    }
+    .cartel__w{
+        animation: despl2 infinite alternate;
+        animation-duration: 2s;
+        animation-delay: 20s;
+        animation-iteration-count: 3;
+    }
+    .cartel__v{
+        animation: despl3 infinite alternate;
+        animation-duration: 2s;
+        animation-delay: 20s;
+        animation-iteration-count: 3;
+    }
+     /* Cartel ofertas + Whatsapp */
+    .ofertas__h3{
+        margin-top: 280px;
+        background-color: #000;
+    }
+    .ofertas__click{
+        margin-left: 120px;
+        background-color: rgb(3, 0, 0);
+
+    }
+    /* Footer Redes */
+    .redes__twitter{
+        margin-left: 230px;
+    }
+}
+@media (min-width: 790px) {
+    /* logo,cartel,nav,ofertas(medidas-posicion) */
+    .logo{
+        font-size: 30px;
+    }
+    .ul1__ini, .ul1__ofertas{
+        font-size: 30px;
+    }
+    .cartel{
+        font-size: 80px;
+    
+    }
+    .cartel__d{
+        background-color: #000;
+    }
+    .cartel__a{
+        margin-top: 30px;
+        margin-left: -150px;
+    }
+    .cartel__n--2{
+        margin-top:70px ;
+        margin-left: -80px;
+    }
+    .cartel__u{
+        margin-top: 70px;
+    }
+    .cartel__e--2{
+        margin-top: 70px;
+    }
+    .cartel__e--2{
+        margin-top: 70px;
+    }
+    .cartel__s--1{
+        margin-top: 70px;
+    }
+    .cartel__t{
+        margin-top: 70px;
+    }
+    .cartel__r{
+        margin-top: 70px;
+    }
+    
+    .cartel__a--1{
+        margin-top: 70px;
+    }
+    .cartel__w{
+        margin-top: 85px;
+        margin-left: -60px;
+    }
+    .cartel__e--3{
+        margin-top: 85px;
+    }
+    .cartel__b--2{
+        margin-top: 85px;
+    }
+
+    
+    .ofertas{
+        font-size: 30px;
+    }
+    .ofertas__click{
+        display: none;
+    }
+    .ofertas__logo{
+    font-size: 50px; 
+    position: absolute;
+    margin-left: 255px;
+   
+    }
+    .contenedor-fotos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    .img1, .img2, .img3, .img4{
+    height: 0;
+    }
+    .img1__p, .img2__p, .img3__p , .img4__p{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        opacity: 1;
+    }
+    .img1__h3, .img2__h3, .img3__h3 , .img4__h3{
+        background-color: rgb(0, 0, 0);
+    }
+
+    .img1__img{  
+        margin-top: 0px;
+        height: 450px; 
+        width: 100%;
+        object-fit: cover;
+    }
+    .img1__img:hover{
+        opacity: 0.9;
+    }
+    .img2__img{
+        margin-top: 260px;
+        height: 450px; 
+        object-fit: cover;
+    }
+    .img2__img:hover{
+        opacity: 0.9;
+    }
+    .img3__img{
+        margin-top: 259px;
+        width: 100%;
+        height: 450px; 
+        object-fit: cover;
+    }
+    .img3__img:hover{
+        opacity: 0.9;
+    }
+    .img4__img{
+        margin-top: 260px;
+        width: 100%;
+        height: 450px; 
+        object-fit: cover;
+    }
+    .img4__img:hover{
+        opacity: 0.9;
+    }
+    .redes{
+        position: relative;
+        top: 700px;
+    }
+    .redes__twitter{
+    margin-left: 330px;
+    }
+    .terminos{
+        position: relative;
+        top: 700px;
+        background-color: #000;
+        text-align: center;
+    }  
+
+    
+}
+@media (min-width: 1100px) {
+    
+    .cartel{
+        position: relative;
+        font-size: 120px;
+       top: -10px;
+       z-index: -1;
+    }
+    .cartel__w, .cartel__e--3, .cartel__b--2{
+        position: relative;
+        top: 200px;
+        
+    }
+    .cartel__a{
+        position: relative;
+        z-index: 1;
+    }
+    .ofertas__logo{
+        font-size: 75px;
+        position: fixed;
+        left: 900px;
+        bottom: 110px;
+        z-index: 1;
+    }
+    .redes__twitter{
+        margin-left: 600px;
+    }
+}
+
+/* Pagina de Ofertas */
+
+    .log a{
+        position: fixed;
+        top: 160px; 
+        left: 160px;
+        font-size: 30px;
+        color: green;
+        background-color: #fff;
+        padding: 2px;
+        border-radius: 10px;
+    }
+    .log h3{
+        color: #fff;
+        margin-top: 60px;
+    }    
+
+
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        margin-top: 80px;
+    }
+
+    .verduleria img{
+        width: 340px;
+        height: 340px;
+        object-fit: cover;
+    }
+    
+    .verduleria h2, h3, p{
+        text-align: center;
+    }
+    
+    .almacen img{
+        width: 340px;
+        height: 340px;
+        object-fit: cover;
+        
+    }
+    .almacen h2{
+        margin-top: 15px;
+    }
+    .almacen h2, h3, p{
+        text-align: center;
+        background-color: #000;
+        opacity: 0.8;
+    }
+    .limpieza h2{
+        text-align: center;
+        background-color: #000;
+        opacity: 0.8;
+    }
+    .limpieza img{
+        width: 340px;
+        height: 340px;
+        object-fit: contain;
+    }
+    
+    .fiambres{
+        display: flex;
+        flex-direction: column;
+    }
+    .fiambres h2{
+        background-color: #000;
+        text-align: center;
+        opacity: .8;
+    }
+   
+    .perros{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    . perros h2{
+        text-align: center;
+        background-color: #000;
+        opacity: .8;
+    }
+
+
+
